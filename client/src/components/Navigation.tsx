@@ -26,8 +26,14 @@ export default function Navigation() {
             <a href="#api" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
               API
             </a>
-            <Button variant="default" className="gradient-purple-cyan text-white">
-              Get Started
+            <Button variant="default" className="gradient-purple-cyan text-white" asChild>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc5qLIEDJtyRcRX5UzztChjb8u2nfvkM1Wh2-8HPHNifl3rAg/viewform?usp=publish-editor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Get Started
+              </a>
             </Button>
           </div>
 
@@ -66,8 +72,14 @@ export default function Navigation() {
               >
                 API
               </a>
-              <Button variant="default" className="gradient-purple-cyan text-white w-full">
-                Get Started
+              <Button variant="default" className="gradient-purple-cyan text-white w-full" asChild>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc5qLIEDJtyRcRX5UzztChjb8u2nfvkM1Wh2-8HPHNifl3rAg/viewform?usp=publish-editor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Get Started
+                </a>
               </Button>
             </div>
           </div>

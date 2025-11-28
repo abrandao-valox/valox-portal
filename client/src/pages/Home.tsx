@@ -32,12 +32,18 @@ export default function Home() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="gradient-purple-cyan text-white text-lg px-8">
-                  Get Started
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                <Button size="lg" className="gradient-purple-cyan text-white text-lg px-8" asChild>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc5qLIEDJtyRcRX5UzztChjb8u2nfvkM1Wh2-8HPHNifl3rAg/viewform?usp=publish-editor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Get Started
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8" asChild>
-                  <a href="https://docs.valox.ngrok.io/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://79cdaa32-9b19-4e9d-ab9d-a89800ef0f46.valox.co/" target="_blank" rel="noopener noreferrer">
                     View Documentation
                   </a>
                 </Button>
@@ -285,7 +291,7 @@ export default function Home() {
               </div>
               <div className="mt-8">
                 <Button size="lg" className="gradient-purple-cyan text-white" asChild>
-                  <a href="https://docs.valox.ngrok.io/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://79cdaa32-9b19-4e9d-ab9d-a89800ef0f46.valox.co/" target="_blank" rel="noopener noreferrer">
                     View API Documentation
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </a>
@@ -313,12 +319,18 @@ export default function Home() {
                     Get your API keys, explore our documentation, and launch your first global money experience in minutes.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                    <Button size="lg" className="gradient-purple-cyan text-white text-lg px-10">
-                      Get API Keys
-                      <ArrowRight className="ml-2 w-5 h-5" />
+                    <Button size="lg" className="gradient-purple-cyan text-white text-lg px-10" asChild>
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSc5qLIEDJtyRcRX5UzztChjb8u2nfvkM1Wh2-8HPHNifl3rAg/viewform?usp=publish-editor"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Get API Keys
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </a>
                     </Button>
                     <Button size="lg" variant="outline" className="text-lg px-10" asChild>
-                      <a href="https://docs.valox.ngrok.io/" target="_blank" rel="noopener noreferrer">
+                      <a href="https://79cdaa32-9b19-4e9d-ab9d-a89800ef0f46.valox.co/" target="_blank" rel="noopener noreferrer">
                         Read Documentation
                       </a>
                     </Button>
@@ -345,10 +357,16 @@ export default function Home() {
             <p className="text-xl text-white/80 leading-relaxed">
               ValoX brings together stablecoins, local payment rails, real-time settlements, and compliance, making global money as seamless as the internet.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="gradient-purple-cyan text-white text-lg px-8">
-                Get Started Today
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="gradient-purple-cyan text-white text-lg px-8" asChild>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc5qLIEDJtyRcRX5UzztChjb8u2nfvkM1Wh2-8HPHNifl3rAg/viewform?usp=publish-editor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Get Started Today
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </a>
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 border-white text-white hover:bg-white/10">
                 Contact Sales
