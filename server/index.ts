@@ -28,8 +28,22 @@ async function startServer() {
         return res.status(400).json({ ok: false, error: "Missing credentials" });
       }
 
-      const usersFile = path.resolve(__dirname, "users.json");
-      const data = await readFile(usersFile, "utf-8");
+      const candidatePaths = [
+        path.resolve(__dirname, "users.json"),
+        path.resolve(__dirname, "public", "users.json"),
+        path.resolve(process.cwd(), "server", "users.json"),
+        path.resolve(process.cwd(), "users.json"),
+      ];
+      let data: string | null = null;
+      for (const p of candidatePaths) {
+        try {
+          data = await readFile(p, "utf-8");
+          break;
+        } catch {}
+      }
+      if (!data) {
+        return res.status(500).json({ ok: false, error: "Users file not found" });
+      }
       const parsed = JSON.parse(data) as { users: Array<{ username: string; password: string }> };
       const matched = parsed.users.find(u => u.username === username && u.password === password);
 
