@@ -1,0 +1,13 @@
+{
+  "users": [
+    { "username": "admin", "password": "Fr3d3442dds" },
+    { "username": "user1", "password": "899458245hbg" },
+    { "username": "user2", "password": "1234567890ab" },
+    { "username": "user3", "password": "9876543210zyx" },
+    { "username": "user4", "password": "5678901234cd" },
+    { "username": "abrandao@valox.co", "password": "254769@681572" },
+    { "username": "matheus@valox.co", "password": "6543210987vw" },
+    { "username": "marcos@valox.co", "password": "2468013579ab" },
+    { "username": "paymentology", "password": "34#678@sr012ef" }
+  ]
+}
