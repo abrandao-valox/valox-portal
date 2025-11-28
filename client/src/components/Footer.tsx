@@ -19,8 +19,8 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#features" className="hover:text-foreground transition-colors">Features</a></li>
               <li><a href="#use-cases" className="hover:text-foreground transition-colors">Use Cases</a></li>
-              <li><a href="https://79cdaa32-9b19-4e9d-ab9d-a89800ef0f46.valox.co/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">API Reference</a></li>
-              <li><a href="https://79cdaa32-9b19-4e9d-ab9d-a89800ef0f46.valox.co/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Documentation</a></li>
+              <li><a href="/auth" className="hover:text-foreground transition-colors">API Reference</a></li>
+              <li><a href="/auth" className="hover:text-foreground transition-colors">Documentation</a></li>
             </ul>
           </div>
 

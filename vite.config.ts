@@ -8,6 +8,14 @@ import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 
+const DEV_PORT = Number(process.env.PORT ?? 3000);
+const USE_HTTPS = process.env.HTTPS === "true";
+const HMR_CLIENT_PORT = process.env.HMR_CLIENT_PORT
+  ? Number(process.env.HMR_CLIENT_PORT)
+  : DEV_PORT === 443
+    ? 443
+    : undefined;
+
 export default defineConfig({
   plugins,
   resolve: {
@@ -24,9 +32,10 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
-    port: 3000,
+    port: DEV_PORT,
     strictPort: false, // Will find next available port if 3000 is busy
     host: true,
+    https: USE_HTTPS,
     allowedHosts: [
       ".manuspre.computer",
       ".manus.computer",
@@ -37,10 +46,20 @@ export default defineConfig({
       ".ngrok.io",
       "localhost",
       "127.0.0.1",
+      "valox.co",
+      ".valox.co",
     ],
     fs: {
       strict: true,
       deny: ["**/.*"],
     },
+    proxy: {
+      "/api": {
+        target: "http://localhost:3001",
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+    hmr: HMR_CLIENT_PORT ? { clientPort: HMR_CLIENT_PORT } : undefined,
   },
 });

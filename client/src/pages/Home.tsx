@@ -43,7 +43,7 @@ export default function Home() {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8" asChild>
-                  <a href="https://79cdaa32-9b19-4e9d-ab9d-a89800ef0f46.valox.co/" target="_blank" rel="noopener noreferrer">
+                  <a href="/auth">
                     View Documentation
                   </a>
                 </Button>
@@ -291,7 +291,7 @@ export default function Home() {
               </div>
               <div className="mt-8">
                 <Button size="lg" className="gradient-purple-cyan text-white" asChild>
-                  <a href="https://79cdaa32-9b19-4e9d-ab9d-a89800ef0f46.valox.co/" target="_blank" rel="noopener noreferrer">
+                  <a href="/auth">
                     View API Documentation
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </a>
@@ -330,7 +330,7 @@ export default function Home() {
                       </a>
                     </Button>
                     <Button size="lg" variant="outline" className="text-lg px-10" asChild>
-                      <a href="https://79cdaa32-9b19-4e9d-ab9d-a89800ef0f46.valox.co/" target="_blank" rel="noopener noreferrer">
+                      <a href="/auth">
                         Read Documentation
                       </a>
                     </Button>
